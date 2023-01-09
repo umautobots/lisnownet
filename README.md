@@ -32,7 +32,7 @@ This is the offical implementation of [LiSnowNet: Real-time Snow Removal for LiD
 
 ## Datasets
 
-Download the [Canadian Adverse Driving Conditions (CADC) Dataset](http://cadcd.uwaterloo.ca/) and the [Winter Adverse Driving dataSet (WADS)](https://digitalcommons.mtu.edu/wads/), and create symlinks to the them under the `data` folder:
+Download the [Canadian Adverse Driving Conditions (CADC) Dataset](http://cadcd.uwaterloo.ca/) and the [Winter Adverse Driving dataSet (WADS)](https://digitalcommons.mtu.edu/wads/), and create symlinks to them under the `data` folder:
 
 ```
 ./data
