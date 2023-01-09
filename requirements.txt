@@ -1,0 +1,12 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+torch==1.13.1
+torchvision==0.14.1
+
+tensorboard==2.10.0
+scipy==1.9.1
+scikit-learn==1.1.2
+ipython>=8.5.0
+matplotlib>=3.6.0,<4.0
+opencv-python>=4.6,<4.7
+open3d>=0.16,<0.17
+utm==0.7.0

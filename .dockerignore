@@ -1,0 +1,10 @@
+.vscode/
+data/
+docker/
+figures/
+test/
+logs/
+
+**/__pycache__/
+**/*.py
+**/*.png
