@@ -1,0 +1,10 @@
+{
+    "num_epochs": 20,
+    "batch_size": 32,
+    "lr": 0.001,
+    "lr_decay": -1.0,
+    "alpha": 5.0,
+    "dataset": "cadc",
+    "log_dir": "./logs",
+    "tag": "cadc_alpha=5.0"
+}
