@@ -122,7 +122,7 @@ class ResidualBlock(nn.Module):
         return self.activation(self.main_block(x) + self.shortcut(x))
 
 
-class MWCNN(nn.Module):
+class LiSnowNet(nn.Module):
     def __init__(self, c0=8):
         super().__init__()
 

@@ -17,7 +17,7 @@ from torch.utils.tensorboard import SummaryWriter
 from tools import losses
 from tools.datasets.wads import WADS
 from tools.datasets.cadc import CADC
-from tools.models import MWCNN
+from tools.models import LiSnowNet
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--num_epochs', type=int, default=20,
@@ -92,7 +92,7 @@ loader_val = DataLoader(
 
 # Using multiple GPUs
 model = nn.DataParallel(
-    MWCNN(),
+    LiSnowNet(),
     device_ids=range(torch.cuda.device_count())
 ).to(device)
 

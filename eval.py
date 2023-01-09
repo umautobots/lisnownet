@@ -14,7 +14,7 @@ from torch.utils.data import DataLoader
 
 from tools.datasets.wads import WADS
 from tools.datasets.cadc import CADC
-from tools.models import MWCNN
+from tools.models import LiSnowNet
 from tools.utils import image2points
 
 
@@ -137,7 +137,7 @@ if __name__ == '__main__':
 
     # Using multiple GPUs
     model = nn.DataParallel(
-        MWCNN(),
+        LiSnowNet(),
         device_ids=range(torch.cuda.device_count())
     ).to(device)
 
