@@ -44,6 +44,33 @@ Download the [Canadian Adverse Driving Conditions (CADC) Dataset](http://cadcd.u
         └── velodyne/{FRAME_ID}.bin
 ```
 
+## Train
+
+To train the model, run
+
+```bash
+$ ./train.py [--batch_size BATCH_SIZE] [--dataset DATASET] [--alpha ALPHA] [--tag TAG] [...]
+```
+
+For example:
+
+```bash
+$ ./train.py --dataset cadc --tag cadc_alpha=5.0 --lr_decay -1 --alpha 5.0
+```
+
+## Evaluate
+
+```bash
+$ ./eval.py [--batch_size BATCH_SIZE] [--dataset DATASET] [--tag TAG] [--threshold THRESHOLD] [...]
+```
+
+For example:
+
+```bash
+$ ./eval.py --tag wads_alpha=4.0 --batch_size 8 --dataset wads --threshold 8e-3
+$ ./eval.py --tag cadc_alpha=5.0 --batch_size 8 --dataset cadc --threshold 1.2e-2
+```
+
 ## Citation
 
 ```
