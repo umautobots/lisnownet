@@ -182,7 +182,7 @@ if __name__ == '__main__':
         gt_img, pr_img = (lbl_img == config.snow_id), pr_img.unsqueeze(1)
         output_img = torch.cat([
             xyz_img,
-            range_img[:, 0, :, :].unsqueeze(1),
+            range_img[:, 1, :, :].unsqueeze(1),
             residual_img,
             gt_img,
             pr_img
