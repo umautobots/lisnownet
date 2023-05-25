@@ -64,10 +64,10 @@ $ ./train.py --dataset cadc --tag cadc_alpha=5.0 --lr_decay -1 --alpha 5.0
 $ ./eval.py [--batch_size BATCH_SIZE] [--dataset DATASET] [--tag TAG] [--threshold THRESHOLD] [...]
 ```
 
-For example:
+To reproduce the results using pretrained weights, run
 
 ```bash
-$ ./eval.py --tag wads_alpha=4.0 --batch_size 8 --dataset wads --threshold 8e-3
+$ ./eval.py --tag wads_alpha=5.5 --batch_size 8 --dataset wads --threshold 8e-3
 $ ./eval.py --tag cadc_alpha=5.0 --batch_size 8 --dataset cadc --threshold 1.2e-2
 ```
 
