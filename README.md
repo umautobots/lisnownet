@@ -8,12 +8,18 @@ This is the offical implementation of [LiSnowNet: Real-time Snow Removal for LiD
 
 ## Requirements
 
-- Ubuntu 18.04+
+- Ubuntu 20.04+
 - NVIDIA driver >= 515
 - Docker with the [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/)
 - [NVIDIA Container Runtime](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 
 ## Installation
+
+- (Only for WSL2) Install `x11-xserver-utils`
+
+    ```bash
+    $ sudo apt install -y x11-xserver-utils
+    ```
 
 - Build the docker image
 
