@@ -43,7 +43,7 @@ Download the [Canadian Adverse Driving Conditions (CADC) Dataset](http://cadcd.u
 ```
 ./data
 ├── cadcd
-|   └── {DATE}/{DRIVE_ID}/raw/lidar_points/corrected/data/{FRAME_ID}.bin
+|   └── {DATE}/{DRIVE_ID}/raw/lidar_points_corrected/data/{FRAME_ID}.bin
 └── wads
     └── {DRIVE_ID}
         ├── labels/{FRAME_ID}.label
